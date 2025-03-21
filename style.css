@@ -156,17 +156,22 @@ h2 {
     transform-origin: right center;
 }
 
-.opcoes-acessibilidade{
-    margin-top:10px;
+.opcoes-acessibilidade {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
+    display: none; /* Oculta os botões por padrão */
 }
 
+.opcoes-acessibilidade.apresenta-lista {
+    display: none; /* Mostra os botões quando a classe é adicionada */
+}
+
+.apresenta-lista {
+    display: hide; /* Mostra os botões quando a classe é adicionada */
+}
 .opcoes-acessibilidade button{
     margin-bottom: 5px;
-}
-.apresenta-lista{
-    display: none;
 }
 
 .alto-contraste{
